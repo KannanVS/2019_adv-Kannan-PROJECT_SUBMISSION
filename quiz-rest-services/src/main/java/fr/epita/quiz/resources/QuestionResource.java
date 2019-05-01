@@ -31,7 +31,7 @@ public class QuestionResource {
 		Question criteria = new Question();
 		criteria.setContent(inputString);
 		List<Question> searchResults = questionDAO.search(criteria);
-		
+		System.out.println("test");
 		return Response.ok(searchResults).build();
 	}
 	

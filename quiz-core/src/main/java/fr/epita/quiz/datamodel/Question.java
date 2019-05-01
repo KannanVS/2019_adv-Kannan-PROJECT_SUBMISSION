@@ -6,6 +6,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
 
 @Entity
 @Table(name="QUESTIONS")
@@ -18,7 +21,6 @@ public class Question {
 	
 	@Column(name="Q_CONTENT")
 	private String content;
-
 	public Question() {
 
 	}
