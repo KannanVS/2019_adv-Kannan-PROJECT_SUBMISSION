@@ -1,5 +1,7 @@
 <head>
         <link rel="stylesheet" type="text/css" href="question-display.component.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
       </head>
       
       <body>
@@ -8,17 +10,41 @@
                               Quiz
                             </h3>
                             <form>
-                                Question Num: <input type="text" name="Q_ID"><br><br>
-                                Difficulty: <input type="text" name="Difficulty"><br><br>
-                                Questions: <input type="text" name="Q_CONTENT"><br><br>
-                                Choice 1: <input type="text" name="Choice"><br><br>
-                                Choice 2: <input type="text" name="Choice"><br><br>
-                                Choice 3: <input type="text" name="Choice"><br><br>
-                                Choice 4: <input type="text" name="Choice"><br><br>
+                                <h4>
+                                1
+                                What is the use Hibernate?
                                 <br>
+                                <form action="">
+                                        <input type="radio" name="choice_1" value="choice_1"> Database <br>
+                                        <input type="radio" name="choice_2" value="choice_2"> ORM Framework <br>
+                                        <input type="radio" name="choice_3" value="choice_3"> Used as a Server <br>
+                                        <input type="radio" name="choice_4" value="choice_4"> None of the above <br>
+                                      </form>
+                                <br>
+                            </h4>
                             </form>
-                            <button (click) = 'postQuestion()'>
-                              <label>ADD</label>
-                            </button>
+                        
+
+
+
+                            <div class="w3-container">
+                                    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Next</button>
+                                  
+                                    <div id="id01" class="w3-modal">
+                                      <div class="w3-modal-content w3-animate-top w3-card-4">
+                                        <header class="w3-container w3-teal"> 
+                                          <span onclick="document.getElementById('id01').style.display='none'" 
+                                          class="w3-button w3-display-topright">&times;</span>
+                                          <h4>Result</h4>
+                                        </header>
+                                        <div class="w3-container">
+                                          <strong><p>Correct Anwser!!!</p></strong>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>        
+                                
+                                
+</div>
       </div>
       </body>
