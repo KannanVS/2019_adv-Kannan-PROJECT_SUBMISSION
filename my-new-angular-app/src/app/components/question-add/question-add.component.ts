@@ -5,5 +5,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./question-add.component.css']
 })
 export class AppComponent {
-  title = 'This is a sample program';
+  title = 'Add a Question';
 }
